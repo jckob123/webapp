@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <?php include("php/session.php"); ?>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?php
-  include("php/session.php")
-  ?>
-  <title></tt
+  <title>Jakob's site</title>
   <!-- Bootstrap CSS CDN -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-   <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+   <!-- Our Custom CSS -->
+   <link rel="stylesheet/css" href="C:/Users/jakob.ceferin/Desktop/TEMP/NWJSProject">
+
    <!-- Font Awesome JS -->
    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+   <!-- jQuery CDN - Slim version (=without AJAX) -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <!-- Popper.JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
    <!-- Bootstrap JS -->
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
    <script src="script.js"></script>
@@ -26,13 +27,16 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
    <style>
-   @import "style/style.css";
+   @import "style.css";
    </style>
-   <link href="style/style.css" rel="stylesheet" type="text/css">
+   <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
   <div class="outsidewrap">
+    <div class="header">
+
+    </div>
     <div class="wrapper">
       <nav id="sidebar">
         <ul class="list-unstyled components">
@@ -93,7 +97,6 @@
                 <i class="fas fas-align-left"></i>
                 <span></span>
               </button>
-              <a class="btn btn-info btn-logout" href="php/logout.php">Logout</a>
             </div>
 
 
@@ -121,15 +124,32 @@
         </nav>
 
         <div class="page-content">
-          <div class="article">
-              <h3>
-                  O meni
-              </h3>
-              <p>
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio similique tenetur, dolorem autem, suscipit nesciunt eveniet voluptas vel iusto fuga perferendis adipisci molestiae quam. Aspernatur temporibus quisquam expedita dignissimos minus beatae quas voluptate tempore repellendus impedit enim explicabo accusamus, quam nulla aliquid doloribus eum praesentium? Dolor numquam repudiandae cum reprehenderit tenetur recusandae debitis error atque animi porro accusamus magnam, id necessitatibus? Mollitia, et impedit, odit voluptatum libero tempora ullam consectetur eaque veniam vitae, necessitatibus molestiae unde consequatur! Iusto voluptatem libero obcaecati ea quaerat cumque asperiores. Sit aliquam sapiente eum illo eius blanditiis officia inventore porro autem dolore consequuntur quo corporis nisi ducimus cumque, suscipit in iste repellat, eligendi dignissimos? Sed enim rerum ullam nihil facilis quae asperiores eveniet, nam blanditiis non, qui assumenda quas, et tempore. Tempore obcaecati perspiciatis quam nulla illum magnam cum reiciendis repellat at inventore excepturi cumque, iure ipsam nesciunt nisi est, aperiam consectetur aliquam nihil consequatur, quos maiores! In dolore consequuntur doloremque, ullam aliquid dolorum voluptas rem voluptatum facilis a hic accusamus quis repellat beatae ab dicta veritatis ex neque? Impedit fugiat vitae molestiae explicabo tempora minus et sit commodi modi! Aperiam libero voluptatum, perferendis qui, minus recusandae animi consequatur possimus dolore vel nesciunt itaque maxime magnam, aut delectus at deserunt tempore labore. A rem, dolore pariatur omnis tempora veritatis beatae! Architecto nesciunt, est voluptatum libero numquam reprehenderit corporis quibusdam dolore quam quasi rem, veniam harum illo, nemo fuga quisquam facere recusandae? Unde consequuntur quia autem incidunt labore, pariatur hic vel, ab illum praesentium aliquam neque fugiat iure eveniet nulla, earum eligendi enim sequi dolore? Magnam aut id modi? Placeat quas vitae repudiandae dolore a, nisi recusandae unde saepe neque asperiores et! Sint excepturi dolore exercitationem fugit aperiam explicabo, commodi repellendus, impedit quidem nam est vitae obcaecati totam id nesciunt voluptatum accusamus? Unde modi repudiandae sunt exercitationem aliquid soluta quisquam reprehenderit quidem porro suscipit dicta rem provident incidunt eius accusantium adipisci excepturi quasi aut, omnis reiciendis molestiae ab cumque. Commodi itaque reprehenderit laudantium rerum porro! Nesciunt sapiente soluta necessitatibus, aliquid quas voluptatem mollitia, vitae sint blanditiis tempora laboriosam cum illum enim cumque eius magnam maiores! Nulla, dolorum magnam dolores, quaerat quas error officia perferendis temporibus, porro ex tempora blanditiis harum similique? Ratione culpa molestiae veniam facilis! Id, obcaecati reiciendis explicabo officiis nesciunt pariatur illum ipsam, odit provident laborum earum odio accusamus rem saepe consequatur ratione! Vitae aspernatur suscipit consectetur natus ipsum optio, aut similique magni quos.
-              </p>
-          </div>
-        </div>
+          <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
       </div>
 
     </div>

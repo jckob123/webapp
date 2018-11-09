@@ -1,8 +1,7 @@
 <?php
-
-    session_start();
-
-   if(session_destroy()) {
-      header("Location: ../loginPage.php");
-   }
+session_start();
+unset($_SESSION);
+session_destroy();
+session_write_close();
+header('Location: ../loginPage.php');
 ?>

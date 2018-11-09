@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>
     DOCUMENT
   </title>
@@ -33,36 +32,37 @@
    <link href="style/style.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-  <?php
-  include("php/login.php"); 
-  ?>
+    <?php
+    include("php/signup.php")
+    ?>
   <div class="container-login">
 
     <div class="wrapperdivlogin">
       <div class="formwrap">
         <form action="#" method="post">
           <span id="formtitle">
-            Wellcome
+            Register
           </span>
 
           <div class="wrapinput">
-            <span id="inputtext">Email</span>
-            <input type="text" name="username">
+            <span id="inputtext">Username</span>
+            <input id="usernamefield" type="text" name="username">
           </div>
           <div class="wrapinput">
               <span id="inputtext">Password</span>
-              <input type="password" name="password">
+              <input id="pass1" type="password" name="password">
+          </div>
+          <div class="wrapinput">
+              <span id="inputtext">Confirm password</span>
+              <input id="pass2" type="password" name="passwordCheck">
           </div>
           <div id="showResult">
-          <?php echo $error_msg ?>
+            <?php echo $error_msg_signup;?>
           </div>
 
-          <div class="wrapinput">
-            <a href="signupPage.php">Register for account</a>
-          </div>
-
-          <button id="submitbtn" type="submit">Login</button>
+          <button id="submitbtn" type="submit">Sign up</button>
         </form>
       </div>
     </div>

@@ -24,7 +24,9 @@
      min-height: 100vh;
      background-image: linear-gradient(to right,#7C98B3 ,#C1CAD6);
      color:#fff;
-     transition: all 1s;
+     transition:width 0.25s;
+     -webkit-transition:width .25s;
+     -moz-transition: width 0.25s;
    }
 
    .active {
@@ -43,7 +45,7 @@
      transform: translateY(-50%);
    }
 
-   @media (max-width:768px) {
+   @media screen and (max-width:768px) {
      #sidebar {
        margin-left:-250px;
      }
@@ -58,13 +60,27 @@
        transition-timing-function: ease-in
      }
 
+     .container-login {
+      grid-template-columns: 100%;
+      background-color:#ffff;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+   }
+
+   .wrapperdivlogin{
+    border-radius: 40px;
+    width:400px;
+    box-shadow: 10px 1vh 50px  rgba(0, 0, 7, 0.247);
+  }
 
    }
    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
    body {
      font-family: 'Montserrat', sans-serif !important;
-     background:#fafafa;
+     background:#FFF9F9;
    }
    p {
      font-family:'Poppins', sans-serif;
@@ -136,16 +152,15 @@
      border:0px;
    }
 
-   #navbar-top {
-     display:grid;
-     grid-template-columns: 1fr;
-     justify-content: end;
+   .btn-logout {
+     position: absolute;
+     right: 1em;
    }
 
    .navbar {
-     display:grid;
+     display:block;
      margin:20px;
-     position:static;
+     position:relative;
      background-color: #DDE1E4 !important;
      box-shadow:1px 1px 3px rgba(0, 0, 0, 0.1);
    }
@@ -155,6 +170,7 @@
    }
 
    .article h3 {
+     display:block;
      box-shadow: 3px 1px 3px  rgba(0, 0, 0, 0.1);
    }
 
@@ -193,7 +209,16 @@
      font-size:5px;
    }
 
+   .correct {
+     border-bottom-color: green;
+   }
    
+   @media  screen and (max-width:768px) {
+
+  
+    }
+
+    
    .container-login {
      background-image: linear-gradient(rgba(0, 0, 0, 0.068), rgba(0, 0, 0, 0.123)), url("../pics/maxresdefault.jpg");
      background-position: center;
@@ -253,6 +278,7 @@ textarea:focus, input:focus {
      border-width: 0px;
      width:100%;
      border-bottom:2px solid #fafafa;
+     transition: all 2s;
    }
 
    .wrapinput {

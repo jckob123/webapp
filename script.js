@@ -19,9 +19,36 @@ $(document).ready(function() {
     $('#sidebar').toggleClass('active');
   });
 
+  $("#pass1,#pass2").on("keyup",function(){
+    if($('#pass2').val() == $('#pass1').val())
+    {
+      $('#pass1').addClass("correct");
+      $('#pass2').addClass("correct");
+    }
+    else if(($('#pass2').val() && $('#pass1').val()) == "")
+    {
+      $('#pass1').removeClass("correct");
+      $('#pass2').removeClass("correct");    
+    }
+    else
+    {
+      $('#pass1').removeClass("correct");
+      $('#pass2').removeClass("correct");    
+    }
+  }
+  );
 
-
+  $("#usernamefield").on("keyup",function ()
+  {
+    if($("#usernamefield").val().length > 1)
+    {
+      $('#usernamefield').addClass("correct");
+    }
+  });
 });
+
+
+
 
 //function to call on button click, sets the cookie.
 function cookieSet() {
