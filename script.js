@@ -4,6 +4,7 @@ This is custom script meant for UI
 */
 
 $(document).ready(function() {
+
   //reads the cookie when page loads and adds class
   if(Cookies.get('sidebar') == 'on')
   {
@@ -47,9 +48,7 @@ $(document).ready(function() {
   });
 });
 
-
-
-
+//-----------------------------------------------------------------------------------------------------------------
 //function to call on button click, sets the cookie.
 function cookieSet() {
   if(Cookies.get('sidebar') == 'off')
@@ -62,3 +61,33 @@ function cookieSet() {
     document.cookie= "sidebar=off";
   }
 }
+
+
+function getGeoLocation()
+{
+  var geoLat;
+  var geoLon;
+  
+  navigator.geolocation.getCurrentPosition(function(position){
+    geoLat = position.coords.latitude;
+    geoLon = position.coords.longitude;
+  });
+  geoApiCall(geoLat,geoLon);
+};
+
+function geoApiCall(lat,lon)
+{
+
+  $.ajax({
+    url: "https://opendata.si/vreme/report/?lat="+ lat + "&lon=" + lon,
+    type: "POST"
+  })
+    .done(function( data ) {
+      buildWeatherWidget(data)
+    });
+};
+
+function buildWeatherWidget(data)
+{
+  $('#copyrght').append(data.copyright);
+};

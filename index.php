@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
-  include("php/session.php")
+  include("php/session.php");
   ?>
   <title>a</title>
   <!-- Bootstrap CSS CDN -->
@@ -56,7 +56,7 @@
             <li>
               <div class="sidebar-header">
                 <div class="media">
-                  <div class="wrapper-Media row">
+                  <div class="wrapper-Media">
                     <img class="mr-3" id="profilepicID" src="pics/profilepic.png" alt="Generic placeholder image">
                     <div class="media-body">
                       <h5 class="mt-0">Jakob Ceferin</h5>
@@ -129,42 +129,15 @@
         </nav>
 
         <div class="page-content">
+              <div id="row1" class="row col-12 col-lg-3 container-fluid justify-content-center">
+                <div class="span2"><h3 id='copyrght'></h3></div>
+                <div class="span6"></div>
+              </div>
+              <div id="row2" class="row col-12 col-lg-3 container-fluid">
+                <div class="span2"></div>
+                <div class="span6"></div>
+              </div>
           <div class="article">
-            <h3>
-              O meni
-            </h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio similique tenetur, dolorem autem,
-              suscipit nesciunt eveniet voluptas vel iusto fuga perferendis adipisci molestiae quam. Aspernatur
-              temporibus quisquam expedita dignissimos minus beatae quas voluptate tempore repellendus impedit enim
-              explicabo accusamus, quam nulla aliquid doloribus eum praesentium? Dolor numquam repudiandae cum
-              reprehenderit tenetur recusandae debitis error atque animi porro accusamus magnam, id necessitatibus?
-              Mollitia, et impedit, odit voluptatum libero tempora ullam consectetur eaque veniam vitae, necessitatibus
-              molestiae unde consequatur! Iusto voluptatem libero obcaecati ea quaerat cumque asperiores. Sit aliquam
-              sapiente eum illo eius blanditiis officia inventore porro autem dolore consequuntur quo corporis nisi
-              ducimus cumque, suscipit in iste repellat, eligendi dignissimos? Sed enim rerum ullam nihil facilis quae
-              asperiores eveniet, nam blanditiis non, qui assumenda quas, et tempore. Tempore obcaecati perspiciatis
-              quam nulla illum magnam cum reiciendis repellat at inventore excepturi cumque, iure ipsam nesciunt nisi
-              est, aperiam consectetur aliquam nihil consequatur, quos maiores! In dolore consequuntur doloremque,
-              ullam aliquid dolorum voluptas rem voluptatum facilis a hic accusamus quis repellat beatae ab dicta
-              veritatis ex neque? Impedit fugiat vitae molestiae explicabo tempora minus et sit commodi modi! Aperiam
-              libero voluptatum, perferendis qui, minus recusandae animi consequatur possimus dolore vel nesciunt
-              itaque maxime magnam, aut delectus at deserunt tempore labore. A rem, dolore pariatur omnis tempora
-              veritatis beatae! Architecto nesciunt, est voluptatum libero numquam reprehenderit corporis quibusdam
-              dolore quam quasi rem, veniam harum illo, nemo fuga quisquam facere recusandae? Unde consequuntur quia
-              autem incidunt labore, pariatur hic vel, ab illum praesentium aliquam neque fugiat iure eveniet nulla,
-              earum eligendi enim sequi dolore? Magnam aut id modi? Placeat quas vitae repudiandae dolore a, nisi
-              recusandae unde saepe neque asperiores et! Sint excepturi dolore exercitationem fugit aperiam explicabo,
-              commodi repellendus, impedit quidem nam est vitae obcaecati totam id nesciunt voluptatum accusamus? Unde
-              modi repudiandae sunt exercitationem aliquid soluta quisquam reprehenderit quidem porro suscipit dicta
-              rem provident incidunt eius accusantium adipisci excepturi quasi aut, omnis reiciendis molestiae ab
-              cumque. Commodi itaque reprehenderit laudantium rerum porro! Nesciunt sapiente soluta necessitatibus,
-              aliquid quas voluptatem mollitia, vitae sint blanditiis tempora laboriosam cum illum enim cumque eius
-              magnam maiores! Nulla, dolorum magnam dolores, quaerat quas error officia perferendis temporibus, porro
-              ex tempora blanditiis harum similique? Ratione culpa molestiae veniam facilis! Id, obcaecati reiciendis
-              explicabo officiis nesciunt pariatur illum ipsam, odit provident laborum earum odio accusamus rem saepe
-              consequatur ratione! Vitae aspernatur suscipit consectetur natus ipsum optio, aut similique magni quos.
-            </p>
           </div>
         </div>
       </div>

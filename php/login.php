@@ -10,12 +10,10 @@ session_start();
         $sql = "SELECT password FROM users WHERE username='$username'";
         $result = mysqli_query($db,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        $pass = $row['password'];
-
-        $count = mysqli_num_rows($result);
+        $pass = trim($row['password']);
 
         
-        if($count > 0)
+        if(password_verify($password,$pass))
         {
             $_SESSION["username"] = $username;
             $error_msg = "";
@@ -23,8 +21,7 @@ session_start();
         }
         else
         {
-
-            $error_msg = "Invalid username or password" . password_verify($password,$pass);
+            $error_msg = password_verify($password,$pass);
         }
     }
 ?>
